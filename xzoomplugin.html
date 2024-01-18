@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.js" integrity="sha512-kKt0oznSOD4MQo2nWJDWggE968N4Bvwn1VRr0RfMx1ozdC2FLCVLJDuHoeMfbWZU/F50yANpekr6dNTVfaLKdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.css" integrity="sha512-3/KS4uz6rH0JEXfHAhg9iiVXUnNU0+oiDc43ZyeNRr1ENCTgDMUPEZImbfl0gRU3rNCRSi+4RHp7goPpabBE7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xzoom/1.0.15/xzoom.min.css" integrity="sha512-Y58ai8uVim58rsa9pEXJK/fyyFHkbZp6yluEAxAC0iTKyuhAkvUQlkXRRCEyZdLDTnc3cSVF9f/EhB+fThhTNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Document</title>
+    <style>
+        .xzoom{
+            height: 300px;
+            width: 300px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+<div>
+    <img class="xzoom" id="main_image" src="https://images.pexels.com/photos/16177539/pexels-photo-16177539/free-photo-of-a-restaurant-with-a-white-awning-and-green-awning.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" >
+
+    <div>
+
+<!-- Thumbnails -->
+<a href="https://images.pexels.com/photos/18865620/pexels-photo-18865620/free-photo-of-forest-around-road.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+  <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/18865620/pexels-photo-18865620/free-photo-of-forest-around-road.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" >
+</a>
+
+<a href="https://images.pexels.com/photos/19011450/pexels-photo-19011450/free-photo-of-a-view-of-the-mountains-from-the-top-of-a-mountain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+  <img class="xzoom-gallery" width="80" src="https://images.pexels.com/photos/19011450/pexels-photo-19011450/free-photo-of-a-view-of-the-mountains-from-the-top-of-a-mountain.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+</a>
+    </div>
+
+</div>
+
+
+<script>
+
+$(".xzoom, .xzoom-gallery").xzoom({
+    position :"lens",
+    tint:"red"
+}
+
+);
+
+</script>
+</body>
+</html>
